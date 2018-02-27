@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Shop Shop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .hm{
+            background: black; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left,rgba(255,0,0,0),black); /*Safari 5.1-6*/
+            background: -o-linear-gradient(right,rgba(255,0,0,0),black); /*Opera 11.1-12*/
+            background: -moz-linear-gradient(right,rgba(255,0,0,0),black); /*Fx 3.6-15*/
+            background: linear-gradient(to right, rgba(255,0,0,0), black); /*Standard*/
+        }
+        footer {
+            background: blue; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(left,rgba(255,0,0,0),deepskyblue); /*Safari 5.1-6*/
+            background: -o-linear-gradient(right,rgba(255,0,0,0),deepskyblue); /*Opera 11.1-12*/
+            background: -moz-linear-gradient(right,rgba(255,0,0,0),deepskyblue); /*Fx 3.6-15*/
+            background: linear-gradient(to right, rgba(255,0,0,0), deepskyblue); /*Standard*/
+        }
+    </style>
+</head>
+<body class="hm">
+<img src="shoppingbg.jpg" style="margin: 0px; width: 100%; height: 75vh; position: fixed">
+<div style="margin:0px; position: fixed; width: 100%;">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="shopping.html">SHOP SHOP SHOP</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="#"><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <div style="position: fixed;right: 20px;">
+                <img src="cart.gif" id="cart">
+            </div>
+            <div id="list"  style="display: none; position: absolute; top: 50px; right: 20px; width: 30vh; background-color: red; height: 100%">
+                <ul class="list-group">
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div style="position: absolute; top:75vh;width: 100%;" background="bg.jpg" class="hm" >
+<h1 align="center" style="font-size: 15vh; color: white;">List Of Items</h1>
+    <div class="container" style="padding: 20px">
+        <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 items" id="balloon_1">
+        <img src="balloon.jpeg" width="100%"; height="250px" style="background-color: white">
+            <h3 style="color: honeydew; border: solid" align="center">Balloon</h3>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 items" id="burger_2">
+            <img src="burger.jpeg" width="100%"; height="250px" style="background-color: white">
+            <h3 align="center" style="color: honeydew; border: solid">Burger</h3>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 items" id="coddrink_3">
+            <img src="cold_drink.png" width="100%"; height="250px" style="background-color: white">
+            <h3 align="center" style="color: honeydew; border: solid">Cold Drink</h3>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 items"  id="laptop_4">
+            <img src="laptop.png" width="100%" ; height="250px" style="background-color: white">
+            <h3 align="center" style="color: honeydew; border: solid">Laptop</h3>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-xs-6 items" id="shirt_5">
+            <img src="shirt.jpg" width="100%"; height="250px" style="background-color: white">
+            <h3 align="center" style="color: honeydew; border: solid">Shirt</h3>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 items" id="tiffin_6">
+            <img src="tiffin.jpeg" width="100%"; height="250px" style="background-color: white">
+            <h3 align="center" style="color: honeydew; border: solid">Tiffin</h3>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 items" id="bottle_7">
+            <img src="water_block.jpg" width="100%"; height="250px" style="background-color: white">
+            <h3 align="center" style="color: honeydew; border: solid">Water Bottle</h3>
+        </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 items" id="purse_8">
+                <img src="purse.jpg" width="100%"; height="250px" style="background-color: white">
+                <h3 align="center" style="color: honeydew; border: solid">Purse</h3>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 items" id="box_9">
+                <img src="box.jpg" width="100%"; height="250px" style="background-color: white">
+                <h3 align="center" style="color: honeydew; border: solid">Box</h3>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 items" id="shoes_10">
+                <img src="shoes.jpg" width="100%"; height="250px" style="background-color: white">
+                <h3 align="center" style="color: honeydew; border: solid">Shoes</h3>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 items" id="locket_11">
+                <img src="locket.jpg" width="100%"; height="250px" style="background-color: white">
+                <h3 align="center" style="color: honeydew; border: solid">Locket</h3>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 items" id="oreo_12">
+                <img src="oreo.jpg" width="100%"; height="250px" style="background-color: white">
+                <h3 align="center" style="color: honeydew; border: solid">Oreo Biscuits</h3>
+            </div>
+
+        </div>
+    </div>
+    <footer style="width: 100%; height: 15vh; margin-top: 40px;padding:20px;text-align: center; background-color:sandybrown"><h3>@Copyright-- <br/> Made By Anchal</h3></footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="client.js"></script>
+
+</body>
+</html>
